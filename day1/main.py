@@ -1,4 +1,4 @@
-
+#!/usr/bin/python3
 v = []
 
 fn = 'day1/data.txt'

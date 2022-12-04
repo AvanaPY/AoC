@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 # https://adventofcode.com/2022/day/4
 def rd():
     fn = 'day4/data.txt'

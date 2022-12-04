@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 r = {
     "A":1,  # R
     "B":2,  # P
