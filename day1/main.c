@@ -8,10 +8,10 @@ FILE* open_data()
 
 int main(void)
 {
-    FILE* f = open_data();
     char cb[10] = { '\n' }, c;
     int n, m, s, i, h[3] = { 0 };
 
+    FILE* f = open_data();
     if(f == NULL){
         printf("Could not open file\n");
         exit(1);
@@ -44,7 +44,6 @@ int main(void)
                 s += n;
                 i = 0;
             }
-                
         }
         else
         {
@@ -59,5 +58,4 @@ int main(void)
     
     fclose(f);
     return 0;
-        
 }
