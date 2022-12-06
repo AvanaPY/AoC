@@ -132,14 +132,19 @@ int main(void)
         /* code */
     } while (c != EOF);
     
-    printf("Answer 1: ");
+    char* ans1 = malloc(stacks_total + 1);
+    char* ans2 = malloc(stacks_total + 1);
+
+    ans1[stacks_total] = '\0';
+    ans2[stacks_total] = '\0';
+
     for(int i = 0; i < stacks_total; i++)
-        printf("%c", stack[i * MAX_STACK_SZ + stack_size[i] - 1]);
-    printf("\n");
-    printf("Answer 2: ");
-    for(int i = 0; i < stacks_total; i++)
-        printf("%c", stack[i * MAX_STACK_SZ + MAX_STACK_SZ * MAX_STACKS + stack_size[i] - 1]);
-    printf("\n");
+    {
+        ans1[i] = stack[i * MAX_STACK_SZ + stack_size[i] - 1];
+        ans2[i] = stack[i * MAX_STACK_SZ + MAX_STACK_SZ * MAX_STACKS + stack_size[i] - 1];
+    }
+    
+    print_ans_string(ans1, ans2);
     fclose(f);
     return 0;
 }
