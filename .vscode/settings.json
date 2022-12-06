@@ -9,6 +9,7 @@
         "limits": "c",
         "*.tcc": "c",
         "cstdint": "c",
-        "typeinfo": "c"
+        "typeinfo": "c",
+        "utils.h": "c"
     }
 }

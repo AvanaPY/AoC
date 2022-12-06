@@ -1,10 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-FILE* open_data()
-{
-    return fopen("./day2/data.txt", "r");
-}
+#include "utils.h"
 
 int main(void)
 {   
@@ -37,8 +33,7 @@ int main(void)
             ans2 += zz[cb[0] - 1] + 6;   
     }
 
-    printf("Answer 1: %d\n", ans1);
-    printf("Answer 2: %d\n", ans2);
+    print_ans_int(ans1, ans2);
     fclose(f);
     return 0;
 }

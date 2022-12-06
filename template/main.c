@@ -1,14 +1,9 @@
 
 /* https://adventofcode.com/2022/day/ */
-/* gcc -o ./dayX/a ./dayX/main.c && ./dayX/a  <- Change day here too*/
+/* gcc -o ./a ./main.c && ./a */
 #include <stdio.h>
 #include <stdlib.h>
-
-FILE* open_data()
-{
-    /* Remember to change day */
-    return fopen("./day1/data.txt", "r");
-}
+#include "utils.h"
 
 int main(void)
 {   
@@ -27,8 +22,7 @@ int main(void)
     } while ((c = fgetc(f)) != EOF);
     /* and here */
 
-    printf("Answer 1: %d\n", ans1);
-    printf("Answer 2: %d\n", ans2);
+    print_ans_int(ans1, ans2);
     fclose(f);
     return 0;
 }
