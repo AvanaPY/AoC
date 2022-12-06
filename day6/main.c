@@ -1,5 +1,5 @@
 
-/* https://adventofcode.com/2022/day/ */
+/* https://adventofcode.com/2022/day/6 */
 /* gcc -o ./a ./main.c && ./a */
 #include <stdio.h>
 #include <stdlib.h>
