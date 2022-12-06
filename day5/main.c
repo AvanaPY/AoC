@@ -3,14 +3,11 @@
 /* gcc -o ./day5/a ./day5/main.c && ./day5/a  <- Change day here too*/
 #include <stdio.h>
 #include <stdlib.h>
+#include "utils.h"
 #include <string.h>
 
 #define MAX_STACKS 16
 #define MAX_STACK_SZ 64
-FILE* open_data()
-{
-    return fopen("./day5/data.txt", "r");
-}
 
 int main(void)
 {   
